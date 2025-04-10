@@ -1,4 +1,5 @@
 
+
 ul{
     font-family: 'red hat display',serif;
     font-size: larger;
@@ -54,4 +55,48 @@ ul{
 }
 .text-body-secondary{
   font-size: large;
+}
+/* Media query for devices with width less than or equal to 576px (Bootstrap's mobile breakpoint) */
+@media (max-width: 576px) {
+
+  #prpic img {
+    height: 180px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #name {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #titlepara {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  #allcard {
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .btn-group .btn a {
+    font-size: 0.9rem;
+  }
+
+  header .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .nav .nav-link {
+    padding: 5px 0;
+  }
 }
